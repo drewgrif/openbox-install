@@ -19,8 +19,8 @@ sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backen
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
-# File Manager (eg. pcmanfm,krusader)
-sudo apt install -y thunar
+# File Manager (eg. pcmanfm,krusader,thunar)
+sudo apt install -y pcmanfm
 
 # Terminal (eg. terminator,kitty,xfce4-terminal)
 sudo apt install -y terminator
@@ -49,7 +49,7 @@ sudo apt install -y feh
 sudo apt install -y fonts-firacode fonts-liberation2 fonts-ubuntu papirus-icon-theme 
 
 # Openbox packages
-sudo apt install -y openbox dunst dbus-x11 feh hsetroot i3lock libnotify-bin lximage-qt menu picom  qt5-style-plugins rofi scrot tint2 xfce4-power-manager 
+sudo apt install -y openbox dunst dbus-x11 hsetroot i3lock libnotify-bin lximage-qt menu picom  qt5-style-plugins rofi scrot tint2 xfce4-power-manager 
 
 # LXDM login manager
 sudo apt install -y lxdm
