@@ -7,9 +7,8 @@ I used the expert method.
 ```
 sudo apt install git
 
-git clone https://github.com/drewgrif/debob-install
-
-cd debob-install
+git clone https://github.com/drewgrif/openbox
+cd openbox
 
 ./install.sh 
 ```
