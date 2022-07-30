@@ -55,6 +55,10 @@ sudo apt install -y openbox dunst dbus-x11 hsetroot i3lock libnotify-bin lximage
 sudo apt install -y lxdm
 sudo systemctl enable lxdm
 
+# Configuration Setup
+mkdir -p ~/.config/openbox
+cp -a /etc/xdg/openbox/ ~/.config/
+
 ########################################################
 # End of script for default config
 #
