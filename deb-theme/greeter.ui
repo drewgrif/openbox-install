@@ -88,7 +88,7 @@
         </child>
         <child>
           <object class="GtkEventBox" id="bottom_pane">
-            <property name="visible">False</property>
+            <property name="visible">True</property>
             <property name="app_paintable">True</property>
             <property name="visible_window">False</property>
             <child>
@@ -98,8 +98,28 @@
                 <property name="spacing">12</property>
                 <child>
                   <object class="GtkHBox" id="sessions_box">
-                    <property name="visible">False</property>
+                    <property name="visible">True</property>
                     <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkImage" id="image2">
+                        <property name="visible">True</property>
+                        <property name="pixbuf">session.png</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label2">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Desktop:</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
                     <child>
                       <object class="GtkComboBoxEntry" id="sessions">
                         <property name="visible">True</property>
@@ -114,6 +134,79 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkHBox" id="lang_box">
+                    <property name="visible">True</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkImage" id="image3">
+                        <property name="visible">True</property>
+                        <!--<property name="pixbuf">lang.png</property>-->
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label_lang">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Language:</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxEntry" id="lang">
+                        <property name="visible">True</property>
+                        <property name="text_column">0</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_keyboard">
+                    <property name="label" translatable="yes">Keyboard:</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBoxEntry" id="keyboard">
+                  <property name="text_column">0</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="exit">
+                    <property name="label">gtk-quit</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="relief">none</property>
+                    <property name="use_stock">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="pack_type">end</property>
+                    <property name="position">4</property>
                   </packing>
                 </child>
               </object>
